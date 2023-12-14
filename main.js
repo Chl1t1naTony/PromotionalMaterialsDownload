@@ -7,6 +7,5 @@ let FULL_URL = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq
 fetch(FULL_URL)
 .then(res => res.text())
 .then(rep => {
-	let data = JSON.parse(rep.substr(47).slice(0,-2));
 	console.log(rep)
 })
